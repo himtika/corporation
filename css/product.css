@@ -1,0 +1,448 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin:0;
+    background-color: #431353;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* color palet */
+  :root {
+    --purple: #2c023a;
+    --pink: #bf00ff;
+    --dark-purple: #431354;
+    --light-puple: #A680FF;
+    --very-light-purple: #D6D4FF;
+    --text-purple: #780A9C;
+  }
+  
+  /* akhir color palet */
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  #hamburger{
+    display: none;
+  }
+  
+  header{
+    position:fixed;
+      height: 80px;
+      background-color: #c8bdff;
+      display: flex;
+      z-index: 1000;
+      width: 100%;
+  }
+  
+  header .nav1{
+      justify-content: space-between;
+      display: flex;
+      width: 100%;
+      margin: 1%;
+  }
+  
+  .nav-section{
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-section2{
+    display: block;
+    align-items: center;
+  }
+  
+  .nav-section2 h2{
+    margin:0;
+    color:#431353;
+  }
+  
+  
+  .nav-section2 span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#bf00ff;
+    margin-bottom:-1rem;
+  }
+  
+  header .nav1 .nav-section img{
+      width: 50px;
+      height:50px;
+      margin: 1.5rem;
+      border-radius:50%;
+      outline: 2px solid white;
+  }
+  
+  .menu{
+      display: flex;
+      align-items: center;
+  }
+  
+  .menu ul{
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+  }
+  
+  
+  .menu ul li{
+    margin-right:2rem;
+    list-style: none;
+  }
+  
+  .menu ul li a{
+      font-size: 20px;
+      text-decoration: none;
+      color:#431353;
+  }
+  /* akhir dari header navbar */
+
+  /* setting */
+  section{
+    height: max-content;
+    opacity: 0.75;
+    width: 100%;
+  }
+  /* setting */
+
+  /* cooming soon */
+  .coming-soon{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    align-items: center; /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .coming-soon .item h1{
+    font-size: 64px;
+    color: #ba68c8;     
+    text-align: center;
+    margin-top:6rem!important;
+  }
+
+  .coming-soon .item h2{
+    font-size: 24px;
+    color: #bf00ff;
+    font-weight: bold;
+  }
+
+  .coming-soon .item span{
+    font-size: 24px;
+    color: white;
+  }
+
+  .coming-soon .item .gambar1{
+    margin-inline: auto;
+  }
+  /* akhir cooming soon */
+
+  /* button phone corpro */
+  .contact-btn {
+    background-color: #d24cff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px auto;
+    width: 185px;
+    height: 47px;
+    transition: all 0.5s ease-in-out; /* Animasi smooth */
+    box-shadow: 0px 4px 10px rgba(210, 76, 255, 0.3);
+    margin-bottom: rem; /* Kurangi dari 8rem ke 2rem */
+  }
+  
+  
+  .contact-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 15px rgba(210, 76, 255, 0.5);
+  }
+  
+  .contact-btn img {
+    width: 37px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #2c023a;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .contact-btn:hover img {
+    background-color: #bf00ff;
+  }
+  
+ 
+/* Countdown Container */
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: transparent;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-left: 0;
+}
+
+/* Countdown Timer */
+#countdown {
+    display: flex;
+    margin-top: 2rem;
+    gap: 15px; /* Menambah jarak antar angka */
+    justify-content: center;
+}
+
+/* Pembungkus Setiap Angka */
+.countdown-item {
+    background: rgba(255, 255, 255, 0.1); /* Warna semi transparan */
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 100px; /* Ukuran box */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Angka Countdown */
+.countdown-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Label Waktu (Days, Hours, Minutes, Seconds) */
+.countdown-label {
+    font-family: 'Montserrat', sans-serif;
+    color: #bf00ff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Animasi untuk perubahan angka */
+@keyframes numberChange {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.number-changing {
+    animation: numberChange 0.3s ease-in-out;
+}
+
+/* Item Container */
+.item {
+    text-align: center;
+}
+
+/* awal footer */
+.footer {
+  background-color: #2c023a;
+  color: white;
+  padding: 40px 20px;
+  margin-top:20rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.corporation-section {
+  grid-column: 1;
+}
+
+.corporation-title {
+  color: #BB00FF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  
+}
+
+.social-icons i {
+  background-color: #411b4d;
+  border-radius: 50%;
+  color:white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.license-text {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid white;
+  grid-column: 1 / -1;
+}
+
+.license-text img {
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 34px;
+  height: 32px;
+}
+
+/* Optional: Add hover effect for better interaction */
+.section ul li a:hover {
+  opacity: 0.8;
+}
+
+/* Mobile Layout Styles - Updated to match image */
+.mobile-layout {
+  display: none; /* Hidden by default */
+  padding: 2rem 1.5rem;
+  background-color: #2c023a; /* Dark purple background for mobile */
+  flex-direction: column;
+}
+
+/* Logo and Title Section */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.logo-title {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Social Media Icons */
+.mobile-layout .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.mobile-layout .social-icons a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Two Column Layout for Media and Event */
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+
+
+.mobile-layout h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.mobile-layout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.mobile-layout ul li {
+  margin-bottom: 0.75rem;
+}
+
+.mobile-layout ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+   /* Aplikasi Publik Section */
+   .aplikasi-publik {
+    margin-top: 0.5rem;
+}
+
+
+
+/* akhir footer */
