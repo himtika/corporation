@@ -245,18 +245,18 @@ body {
       /* akhir button */
 
     /* awal footer */
-.footer {
-  background-color: #2c023a;
-  color: white;
-  padding: 40px 20px;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
-}
+        .footer {
+          background-color: #2c023a;
+          color: white;
+          padding-inline: 8rem;
+          padding-top: 30px;
+          height: max-content;
+        }
+    
+        .footer-content {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;   }
 
 .corporation-section {
   grid-column: 1;
@@ -309,7 +309,7 @@ body {
 
 .license-text {
   text-align: center;
-  padding-top: 20px;
+  padding-block: 15px;
   border-top: 1px solid white;
   grid-column: 1 / -1;
 }

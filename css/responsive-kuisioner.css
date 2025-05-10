@@ -99,7 +99,7 @@
   
   .button {
     position: absolute;
-    bottom: 20px; /* Atur jarak dari bawah */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
@@ -107,8 +107,7 @@
     background-color: #431353;
     color: white;
     text-align: center;
-    width: auto; /* Pastikan tidak memenuhi seluruh parent *
-    min-width: 150px; /* Atur ukuran minimum */
+    width: 12rem;
     font-size: 1.2rem;
     border-radius: 10px;
     background-color: #431353;
@@ -117,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Jika ada ikon */
+    gap: 10px; 
     height:45px;
     margin-top:8rem;
     
@@ -129,10 +128,10 @@
   }
   
   .button:hover span i {
-    transform: rotate(45deg); /* Rotasi ikon panah */
+    transform: rotate(45deg); 
   }
   
-  /* About Us Responsive */
+  
   .about-us {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -142,9 +141,10 @@
   }
   
   .about-us-image {
-    width: 100%;
+    width: 40%;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top:2rem;
   }
   
   .about-us-image img {
@@ -181,6 +181,7 @@
   .end-page h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    margin-top: 0.5rem !important;
   }
   
   .fp-embed {
@@ -208,13 +209,13 @@
     margin-right: 10px;
   }
   
-   /* awal footer */
+   
    .footer-content {
-    display: none; /* Hide desktop layout on mobile */
+    display: none; 
 }
 
 .mobile-layout {
-    display: flex; /* Show mobile layout on mobile */
+    display: flex; 
 }
 
 .footer-sections {

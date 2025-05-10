@@ -241,13 +241,15 @@ body {
     padding: 5px;
     border-radius: 10px;
     text-align: center;
-    min-width: 100px; /* Ukuran box */
+    min-width: 20px; /* Ukuran box */
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Angka Countdown */
 .countdown-value {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(200, 189, 255, 0.6);
+    border-radius: 8px;
     font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
@@ -286,7 +288,8 @@ body {
 .footer {
   background-color: #2c023a;
   color: white;
-  padding: 40px 20px;
+  padding-inline: 8rem;
+    padding-top: 45px;
   margin-top:20rem;
 }
 
@@ -348,7 +351,7 @@ body {
 
 .license-text {
   text-align: center;
-  padding-top: 20px;
+  padding-block: 15px;
   border-top: 1px solid white;
   grid-column: 1 / -1;
 }
