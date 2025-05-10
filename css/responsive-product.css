@@ -120,6 +120,7 @@
     .coming-soon .item {
       width: 100%;
       margin-top:20rem;
+      margin-bottom:5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -160,7 +161,10 @@
   .number-changing {
       animation: numberChange 0.3s ease-in-out;
   }
-  
+    footer.footer {
+      padding: 0 !important; 
+    }
+      
     .countdown-item {
       display: flex;
       flex-direction: column;

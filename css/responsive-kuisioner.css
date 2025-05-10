@@ -214,8 +214,13 @@
     display: none; 
 }
 
+footer.footer{
+  padding: 0 !important;
+}
+
 .mobile-layout {
     display: flex; 
+  
 }
 
 .footer-sections {

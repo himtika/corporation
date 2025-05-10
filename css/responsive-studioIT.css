@@ -6,7 +6,9 @@
     }
     
     /* Header/Navbar Responsive */
-    
+        footer.footer {
+          padding: 0 !important;
+        }
     header {
       height: 60px;
       width: 100%;

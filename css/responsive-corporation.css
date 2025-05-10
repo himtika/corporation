@@ -306,7 +306,9 @@
       box-sizing: border-box;
       padding: 0 5%;
     }
-    
+        footer.footer {
+          padding: 0 !important;
+        }
     .talk-to-us h1 {
       font-size: 2.5rem;
     }
